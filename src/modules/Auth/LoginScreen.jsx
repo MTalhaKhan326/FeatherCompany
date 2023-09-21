@@ -85,9 +85,9 @@ function LoginScreen() {
           >
             <div>
               <img
-                src={AppImages.onecall}
+                src={AppImages.tfc}
                 alt=""
-                className="w-[90px] h-[91px]"
+                className="w-[120px]"
               />
 
               <div className="text-[47px] text-[#333333] mt-[16px]">
@@ -151,7 +151,7 @@ function LoginScreen() {
                 </span>
               </div>
               {/* <Link to={`/verify/${formFields.mobile}`}> */}
-                <button className="w-full h-[56px] bg-[#1FA3DB] text-[16px] rounded-md text-white hover:bg-[#8cd2f0]  mt-4">
+                <button className="w-full h-[56px] bg-[#c4b47c] text-[16px] rounded-md text-white hover:bg-[#d7cba9]  mt-4">
                   Sign in
                 </button>
               {/* </Link> */}
@@ -169,16 +169,21 @@ function LoginScreen() {
             </span>
           </div>
         </div>
-        <div className="w-[50%] h-screen border-[1px] py-[5%] pl-[100px] border-gray-300 bg-[#1FA3DB] relative">
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="w-[50%] h-screen border-[1px] border-gray-300 bg-[#c4b47c] relative">
+          {/* <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <img
               src={images[currentImageIndex]}
               alt={`Image ${currentImageIndex}`}
             />
             <div className="text-center text-[32px] text-white">
-              {/* {data.web_title} */}
+              {data.web_title}
             </div>
+          </div> */}
+          <div className="relative">
+          <img src={AppImages.img1} alt="" className="w-[100%] h-screen blur-sm"/>
+          <img src={AppImages.img1} alt="" className="w-[70%] absolute top-[100px] left-[100px] rounded-lg"/>
           </div>
+
         </div>
       </div>
     </div>

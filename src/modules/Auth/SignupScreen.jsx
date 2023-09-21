@@ -82,10 +82,10 @@ function SignupScreen() {
             className="max-w-md mx-auto my-5 gap-2 py-[3%] h-[70vh] justify-between flex flex-col"
           >
             <div>
-              <img
-                src={AppImages.onecall}
+            <img
+                src={AppImages.tfc}
                 alt=""
-                className="w-[90px] h-[91px]"
+                className="w-[120px]"
               />
 
               <div className="text-[47px] text-[#333333] mt-[16px]">
@@ -100,7 +100,7 @@ function SignupScreen() {
                     labelFontSize: "text-[27px]",
                     inputFontSize: "text-[22px]",
                   }}
-                  label="Mobile Number"
+                  label="Email ID"
                   onChange={(e) => {
                     // setFormErrors((old) => ({ ...old, email: null }));
                     setFormFields((old) => ({
@@ -111,7 +111,7 @@ function SignupScreen() {
                   value={formFields.mobile}
                   error={formErrors.mobile}
                   isRequired={true}
-                  placeholder={"03** *******"}
+                  placeholder={"example@gmail.com"}
                 />
               </div>
               {formErrors.mobile && (
@@ -164,18 +164,16 @@ function SignupScreen() {
 
               <p className="my-1 text-sm text-primary pl-4">{error}</p>
 
-              <button className="w-full h-[56px] bg-[#1FA3DB] text-[16px] rounded-md text-white hover:bg-[#a2dbf3]  mt-4">
+              <button className="w-full h-[56px] bg-[#c4b47c] text-[16px] rounded-md text-white hover:bg-[#d7cba9]  mt-4">
                 Register
               </button>
             </div>
           </form>
         </div>
-        <div className="w-[50%] h-screen border-[1px] py-[5%] pl-[100px] border-gray-300 bg-[#1FA3DB] relative">
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <img
-              src={images[currentImageIndex]}
-              alt={`Image ${currentImageIndex}`}
-            />
+        <div className="w-[50%] h-screen border-[1px] border-gray-300 bg-[#c4b47c] relative">
+        <div className="relative">
+          <img src={AppImages.img2} alt="" className="w-[100%] h-screen blur-sm"/>
+          <img src={AppImages.img2} alt="" className="w-[70%] absolute top-[80px] left-[100px] rounded-lg"/>
           </div>
         </div>
       </div>
